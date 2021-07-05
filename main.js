@@ -14,7 +14,7 @@ function generate() {
 
     var output = hasPassword ? `zoommtg://zoom.us/join?confno=${id}&pwd=${pwd}` : `zoommtg://zoom.us/join?confno=${id}`;
 
-    alert(output)
+    document.getElementById("output").value = output;
 }
 
 function generate2() {
@@ -23,5 +23,5 @@ function generate2() {
 
     var output = pwd ? `zoommtg://zoom.us/join?confno=${id}&pwd=${pwd}` : `zoommtg://zoom.us/join?confno=${id}`;
 
-    alert(output);
+    document.getElementById("output").value = output;
 }
