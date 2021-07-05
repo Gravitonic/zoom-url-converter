@@ -27,7 +27,8 @@ function generate2() {
 
     document.getElementById("desktop").value = desktop;
     document.getElementById("mobile").value = mobile;
-}}
+}
+
 function copy(id, outputId) {
     var copyText = document.getElementById(id);
     copyText.select();
