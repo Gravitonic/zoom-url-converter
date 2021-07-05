@@ -13,16 +13,16 @@
 <body class="container mt-5">
   <h1>Zoom URL Converter</h1>
 
-  <div class="row">
+  <div class="row gx-5 gy-3">
     <div class="col col-12 col-lg-7">
-      <h2>Option 1: Enter a Zoom URL</h2>
+      <h2 class="mt-3">Option 1: Enter a Zoom URL</h2>
 
       <div class="d-flex">
         <input type="text" id="url" class="form-control" placeholder="Zoom URL">
         <button id="submit" onclick="generate()" class="btn btn-primary ms-3">Submit</button>
       </div>
 
-      <h2>Option 2: Meeting ID and Password</h2>
+      <h2 class="mt-3">Option 2: Meeting ID and Password</h2>
 
       <div class="d-flex">
         <input type="text" id="meetingId" class="form-control" placeholder="Meeting ID">
@@ -31,9 +31,13 @@
       </div>
     </div>
     <div class="col col-12 col-lg-5">
-      <h2>Output</h2>
+      <h2 class="mt-3">Output</h2>
 
-      <input type="text" id="output" class="form-control" disabled="true">
+      <label for="desktop">Desktop client</label>
+      <input type="text" id="desktop" class="form-control" disabled="true">
+
+      <label for="mobile" class="mt-3">Mobile App</label>
+      <input type="text" id="mobile" class="form-control" disabled="true">
     </div>
   </div>
 

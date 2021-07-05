@@ -11,16 +11,20 @@ function generate() {
 
     var id = hasPassword ? url.substring(url.search("/j/") + 3, url.indexOf("?")) : url.substring(url.search("/j/") + 3);
 
-    var output = hasPassword ? `zoommtg://zoom.us/join?confno=${id}&pwd=${pwd}` : `zoommtg://zoom.us/join?confno=${id}`;
+    var desktop = hasPassword ? `zoommtg://zoom.us/join?confno=${id}&pwd=${pwd}` : `zoommtg://zoom.us/join?confno=${id}`;
+    var mobile = hasPassword ? `zoomus://zoom.us/join?confno=${id}&pwd=${pwd}` : `zoomus://zoom.us/join?confno=${id}`;
 
-    document.getElementById("output").value = output;
+    document.getElementById("desktop").value = desktop;
+    document.getElementById("mobile").value = mobile;
 }
 
 function generate2() {
     var id = document.getElementById("meetingId").value.replace(/ /g, '');
     var pwd = document.getElementById("password").value;
 
-    var output = pwd ? `zoommtg://zoom.us/join?confno=${id}&pwd=${pwd}` : `zoommtg://zoom.us/join?confno=${id}`;
+    var desktop = pwd ? `zoommtg://zoom.us/join?confno=${id}&pwd=${pwd}` : `zoommtg://zoom.us/join?confno=${id}`;
+    var mobile = pwd ? `zoomus://zoom.us/join?confno=${id}&pwd=${pwd}` : `zoomus://zoom.us/join?confno=${id}`;
 
-    document.getElementById("output").value = output;
+    document.getElementById("desktop").value = desktop;
+    document.getElementById("mobile").value = mobile;
 }
