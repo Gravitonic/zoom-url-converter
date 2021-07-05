@@ -1,6 +1,5 @@
 function generate() {
     var url = document.getElementById("url").value;
-    document.getElementById("url").value = "";
 
     var hasPassword = false;
     var pwd = "";
