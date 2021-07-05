@@ -31,8 +31,13 @@ function generate2() {
 
 function copy(id, outputId) {
     var copyText = document.getElementById(id);
+
+    copyText.disabled = false;
+
     copyText.select();
     copyText.setSelectionRange(0, 99999);
+
+    copyText.disabled = true;
 
     document.execCommand("copy");
 
