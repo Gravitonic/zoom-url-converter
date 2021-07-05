@@ -1,7 +1,6 @@
-function test() {
+function generate() {
     var url = document.getElementById("url").value;
     document.getElementById("url").value = "";
-    var prefix = url.substring(url.search("://") + 3, url.search("zoom") - 1);
 
     var hasPassword = false;
     var pwd = "";
@@ -16,4 +15,13 @@ function test() {
     var output = hasPassword ? `zoommtg://zoom.us/join?confno=${id}&pwd=${pwd}` : `zoommtg://zoom.us/join?confno=${id}`;
 
     alert(output)
+}
+
+function generate2() {
+    var id = document.getElementById("meetingId").value.replace(/ /g, '');
+    var pwd = document.getElementById("password").value;
+
+    var output = pwd ? `zoommtg://zoom.us/join?confno=${id}&pwd=${pwd}` : `zoommtg://zoom.us/join?confno=${id}`;
+
+    alert(output);
 }
