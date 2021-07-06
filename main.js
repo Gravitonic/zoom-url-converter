@@ -40,10 +40,7 @@ function generateFromUrl() {
         return;
     }
 
-    var desktop = pwd ? `zoommtg://zoom.us/join?confno=${id}&pwd=${pwd}` : `zoommtg://zoom.us/join?confno=${id}`;
-    var mobile = pwd ? `zoomus://zoom.us/join?confno=${id}&pwd=${pwd}` : `zoomus://zoom.us/join?confno=${id}`;
-
-    showOutput(desktop, mobile);
+    generate(id, pwd);
 }
 
 function generateFromId() {
@@ -70,10 +67,32 @@ function generateFromId() {
         return;
     }
 
+    generate(id, pwd);
+}
+
+function generate(id, pwd) {
+
     var desktop = pwd ? `zoommtg://zoom.us/join?confno=${id}&pwd=${pwd}` : `zoommtg://zoom.us/join?confno=${id}`;
     var mobile = pwd ? `zoomus://zoom.us/join?confno=${id}&pwd=${pwd}` : `zoomus://zoom.us/join?confno=${id}`;
 
+    var uname = document.getElementById("username").value;
+    if (uname.length > 0) {
+        desktop = desktop.concat(`&uname=${uname}`);
+        mobile = mobile.concat(`&uname=${uname}`);
+    }
+
+    if (document.getElementById("control-mute").checked) {
+        desktop = desktop.concat(`&zc=1`);
+        mobile = mobile.concat(`&zc=1`);
+    }
+
     showOutput(desktop, mobile);
+
+    if (document.getElementById("copy-desktop-auto").checked) {
+        copy('desktop', 'copy-desktop');
+    } else if (document.getElementById("copy-mobile-auto").checked) {
+        copy('mobile', 'copy-mobile');
+    }
 }
 
 function showError(input, errorElement, errorMessage) {
