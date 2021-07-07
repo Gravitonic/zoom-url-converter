@@ -19,6 +19,10 @@ function generateFromUrl() {
         return;
     }
 
+    if (!/^https?:\/\//i.test(url)) {
+        url = 'http://' + url;
+    }
+
     var urlObj = new URL(url);
 
     var token = urlObj.searchParams.get("tk");
