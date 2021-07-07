@@ -1,3 +1,19 @@
+document.getElementById("url").addEventListener("keypress", function (event) {
+    if (event.key == "Enter") {
+        event.preventDefault();
+        document.getElementById("submit-url").click();
+    }
+});
+
+document.querySelectorAll("#meeting-id, #password").forEach(function (elem) {
+    elem.addEventListener("keypress", function (event) {
+        if (event.key == "Enter") {
+            event.preventDefault();
+            document.getElementById("submit-id").click();
+        }
+    });
+});
+
 function generateFromUrl() {
     clearErrors();
     clearOutput();
