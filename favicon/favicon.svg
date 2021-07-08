@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="80" height="80">
+  <svg width="80" height="80" fill="none" version="1.1" id="SvgjsSvg1005" xmlns="http://www.w3.org/2000/svg">
+    <rect width="80" height="80" rx="12" fill="#0e71eb" id="SvgjsRect1002" fill-opacity="1"/>
+    <path id="SvgjsPath1001" style="-inkscape-stroke:none" d="M38.032749 5.023203a1.383122 1.2032492 0 00-.799539.06836 1.383122 1.2032492 0 00-.854541 1.1108433V21.897769H-1.0876166a1.383122 1.2032492 0 00-1.3829838 1.203128v33.796982a1.383122 1.2032492 0 001.3829838 1.203129H36.378669V73.79637a1.383122 1.2032492 0 002.361287.851077l38.849269-33.796982a1.383122 1.2032492 0 000-1.702154L38.739956 5.351329a1.383122 1.2032492 0 00-.707207-.328126z" color="#000" fill="#fff" fill-opacity=".5" stroke-width="2.75001" stroke-linejoin="round"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.464149 48.308705v6.60653c0 3.655613-2.937214 6.606529-6.575863 6.606529H-7.991513c-7.277297 0-13.151887-5.901833-13.151887-13.213059V24.084763c0-3.655612 2.937214-6.606529 6.575862-6.606529h32.8798c7.277458 0 13.151887 5.901833 13.151887 13.21306l12.275094-9.249142c2.148183-1.62961 5.260756-.08809 5.260756 2.642611v30.830472c0 2.730699-3.112573 4.272222-5.260756 2.642612z" fill="#fff" id="SvgjsPath1000" fill-opacity="1" stroke-width="1"/>
+  </svg>
+  <style>
+    @media (prefers-color-scheme:light){:root{filter:none}}
+  </style>
+</svg>
